@@ -1,0 +1,9 @@
+.link {
+  border-bottom: 3px solid transparent;
+
+  &__nav {
+    &:hover {
+      border-bottom: 3px solid #4dacff;
+    }
+  }
+}

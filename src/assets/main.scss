@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "./variables.scss";
+@import "./markdown.scss";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background: $primary-color;
+}
+
+::selection {
+  background: $primary-color;
+}
+
+body {
+  width: 100%;
+  background-color: $secondary-color;
+  color: black;
+  font-family: "PT Serif", "serif";
+}
+
+a {
+  text-decoration: none;
+  box-shadow: none;
+}
+
+p a {
+  color: black;
+  border-bottom: 3px solid $primary-color;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $primary-color;
+  }
+}

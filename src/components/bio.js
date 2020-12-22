@@ -9,14 +9,14 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
-import { rhythm } from "../utils/typography"
+// import { rhythm } from "../utils/typography"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/panda-profile.jpg/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 150, height: 150, cropFocus: CENTER) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -40,7 +40,7 @@ const Bio = () => {
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
         style={{
-          minWidth: 50,
+          minWidth: 150,
         }}
       />
       <p>
@@ -48,7 +48,6 @@ const Bio = () => {
         Francisco building useful things.
         {` `}
         <a
-          className="text-blue-600"
           href={`https://twitter.com/${social.twitter}`}
         >
           You should follow him on Twitter
