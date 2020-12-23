@@ -1,12 +1,35 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog TailwindCSS`,
-    author: `Kyle Mathews`,
+    title: `Portfolio`,
+    author: `Daniel Muñoz`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-tailwindcss-demo.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      github: `https://github.com/dmunoz-10`,
+      linkedin: `https://www.linkedin.com/in/djmv225/`,
     },
+    skills: [
+      { name: 'HTML',        icon: 'devicon-html5-plain',       color: 'text-yellow-700', skill: 'Experienced' },
+      { name: 'CSS',         icon: 'devicon-css3-plain',        color: 'text-blue-600',   skill: 'Experienced' },
+      { name: 'Sass',        icon: 'devicon-sass-original',     color: 'text-pink-500',   skill: 'Experienced' },
+      { name: 'JavaScript',  icon: 'devicon-javascript-plain',  color: 'text-yellow-400', skill: 'Experienced' },
+      { name: 'Python',      icon: 'devicon-python-plain',      color: 'text-indigo-700', skill: 'Experienced' },
+      { name: 'Ruby',        icon: 'devicon-ruby-plain',        color: 'text-red-600',    skill: 'Experienced' },
+      { name: 'PHP',         icon: 'devicon-php-plain',         color: 'text-purple-400', skill: 'Skillful' },
+      { name: 'Java',        icon: 'devicon-java-plain',        color: 'text-red-600',    skill: 'Experienced' },
+      { name: 'React',       icon: 'devicon-react-original',    color: 'text-blue-600',   skill: 'Experienced' },
+      { name: 'Gatsby',      icon: 'devicon-gatsby-plain',      color: 'text-purple-900', skill: 'Beginner' },
+      { name: 'Vue',         icon: 'devicon-vuejs-plain',       color: 'text-green-600',  skill: 'Skillful' },
+      { name: 'Rails',       icon: 'devicon-rails-plain',       color: 'text-red-800',    skill: 'Experienced' },
+      { name: 'Django',      icon: 'devicon-django-plain',      color: 'text-green-800',  skill: 'Beginner' },
+      { name: 'Django',      icon: 'devicon-django-plain',      color: 'text-green-800',  skill: 'Beginner' },
+      { name: 'Laravel',     icon: 'devicon-laravel-plain',     color: 'text-red-600',    skill: 'Beginner' },
+      { name: 'CodeIgniter', icon: 'devicon-codeigniter-plain', color: 'text-red-600',    skill: 'Skillful' },
+      { name: 'Mysql',       icon: 'devicon-mysql-plain',       color: 'text-blue-800',   skill: 'Skillful' },
+      { name: 'Postgresql',  icon: 'devicon-postgresql-plain',  color: 'text-indigo-700', skill: 'Skillful' },
+      { name: 'MongoDB',     icon: 'devicon-mongodb-plain',     color: 'text-green-600',  skill: 'Beginner' },
+      { name: 'Docker',      icon: 'devicon-docker-plain',      color: 'text-green-600',  skill: 'Skillful' },
+    ],
   },
   plugins: [
     {
