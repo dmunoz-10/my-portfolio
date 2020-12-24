@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const Footer = () => {
@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="flex justify-around">
           {socialMedia.map(({ name, url }) => (
             <a key={name} rel="noopener noreferrer nofollow" href={url}>{name}</a>
-          )).reduce((prev, curr) => [prev, ' · ', curr])}
+          )).reduce((prev, curr) => [prev, <Fragment>&nbsp;&nbsp; · &nbsp;&nbsp;</Fragment>, curr])}
         </div>
 
         <div className="flex justify-center mt-1">
