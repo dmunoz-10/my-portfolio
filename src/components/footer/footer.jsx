@@ -19,7 +19,7 @@ const Footer = () => {
   `)
 
   const { author } = data.site.siteMetadata
-  const { author: authorName, socialMedia } = author
+  const { name: authorName, socialMedia } = author
 
   return (
     <footer className="flex justify-center">
