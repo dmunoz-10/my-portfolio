@@ -10,7 +10,7 @@ class Layout extends React.Component {
 
     return (
       <div className="max-w-3xl mx-auto px-5 py-10">
-        <Header rootPath={location.pathname === rootPath} />
+        <Header rootPath={rootPath} location={location.pathname} />
         <main>{children}</main>
         <Footer />
       </div>

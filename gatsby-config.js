@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Portfolio`,
-    author: `Daniel Muñoz`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-tailwindcss-demo.netlify.com/`,
+    author: {
+      name: 'Daniel Muñoz',
+      description: 'Web developer with a real passion for technologies, coding lover and focus on back-end with Ruby on Rails.',
+    },
+    description: `The Daniel Muñoz's portfolio where you can see some of his activities`,
     socialMedia: [
       { name: 'GitHub', url: 'https://github.com/dmunoz-10' },
       { name: 'LinkedIn', url: 'https://www.linkedin.com/in/djmv225/' },

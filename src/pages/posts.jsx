@@ -1,21 +1,21 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import { rhythm } from "../utils/typography"
 
-class BlogIndex extends React.Component {
-  render() {
+class Posts extends React.Component {
+  render () {
     const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
+    const { title } = data.site.siteMetadata
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={title}>
         <SEO title="All posts" />
-        <Bio />
+
+        <h2 className="text-5xl">Posts</h2>
+
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -47,7 +47,7 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default Posts
 
 export const pageQuery = graphql`
   query {

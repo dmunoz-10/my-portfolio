@@ -6,6 +6,9 @@ const Footer = () => {
     query FooterQuery {
       site {
         siteMetadata {
+          author {
+            name
+          }
           socialMedia {
             name
             url
@@ -15,7 +18,8 @@ const Footer = () => {
     }
   `)
 
-  const { socialMedia } = data.site.siteMetadata
+  const { socialMedia, author } = data.site.siteMetadata
+  const authorName = author.name
 
   return (
     <footer className="flex justify-center">
@@ -27,7 +31,7 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center mt-1">
-          © {new Date().getFullYear()} Daniel Muñoz
+          © {new Date().getFullYear()} { authorName }
         </div>
       </div>
     </footer>

@@ -31,7 +31,7 @@ class BlogPostTemplate extends React.Component {
             className="markdown"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-          <hr className="h-px mb-8" />
+          <hr className="h-px my-8" />
           <footer>
             <Bio />
           </footer>

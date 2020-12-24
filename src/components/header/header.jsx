@@ -1,9 +1,10 @@
 import React from 'react'
+import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import './styles.scss'
 import Image from 'gatsby-image'
 
-const Header = ({ rootPath }) => {
+const Header = ({ rootPath, location }) => {
   const data = useStaticQuery(graphql`
     query HeaderQuery {
       avatar: file(absolutePath: { regex: "/panda-profile.jpg/" }) {
@@ -13,8 +14,17 @@ const Header = ({ rootPath }) => {
           }
         }
       }
+      site {
+        siteMetadata {
+          author {
+            name
+          }
+        }
+      }
     }
   `)
+
+  const { author } = data.site.siteMetadata
 
   const links = [
     { name: 'Posts', path: '/posts' },
@@ -28,17 +38,21 @@ const Header = ({ rootPath }) => {
         <nav className="flex items-center justify-between">
           <div className="flex justify-start">
             <Image
-              className="mr-4 mb-0 rounded-full border-solid border-2 border-gray-300"
+              className="mr-4 mb-0 mt-1 rounded-full border-solid border-2 border-gray-300"
               fixed={data.avatar.childImageSharp.fixed}
-              alt="Some"
+              alt={author.name}
               style={{ minWidth: 50 }}
             />
-            {!rootPath && <Link className="text-2xl mt-2 link" to="/">Daniel Muñoz</Link>}
+            {!(rootPath === location) && <Link className="text-2xl mt-2 link" to="/">{ author.name }</Link>}
           </div>
 
           <div className="flex justify-end mt-1">
             {links.map(({ name, path }) => (
-              <Link className="inline-block ml-4 text-xl link link__nav" to={path} key={path}>
+              <Link
+                className={`inline-block ml-4 text-xl link link__nav${location === path ? '--active' : ''}`}
+                to={path}
+                key={path}
+              >
                 { name }
               </Link>
             ))}
@@ -47,6 +61,11 @@ const Header = ({ rootPath }) => {
       </div>
     </header>
   )
+}
+
+Header.propTypes = {
+  rootPath: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
 }
 
 export default Header

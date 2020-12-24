@@ -1,43 +1,43 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
-// import { rhythm } from "../utils/typography"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
       avatar: file(absolutePath: { regex: "/panda-profile.jpg/" }) {
         childImageSharp {
-          fixed(width: 200, height: 200, cropFocus: CENTER) {
+          fixed(width: 80, height: 80, cropFocus: CENTER) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       site {
         siteMetadata {
-          author
+          author {
+            name
+            description
+          }
         }
       }
     }
   `)
 
-  const { author } = data.site.siteMetadata
+  const { author: { name, description } } = data.site.siteMetadata
 
   return (
     <div className="flex mb-20">
       <Image
         className="mr-4 mb-0 rounded-full"
         fixed={data.avatar.childImageSharp.fixed}
-        alt={author}
+        alt={name}
         style={{
-          minWidth: 200,
+          minWidth: 80,
         }}
       />
       <div className="my-auto">
-        <h2 className="text-5xl">Hey! I'm <strong>Daniel</strong></h2>
-        <p className="text-3xl">
-          I'm a web developer focus mostly on <strong>back-end</strong>
-        </p>
+        <h2 className="text-xl">{ name }</h2>
+        <p className="text-base">{ description }</p>
       </div>
     </div>
   )
