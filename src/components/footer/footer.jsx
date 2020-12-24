@@ -19,8 +19,7 @@ const Footer = () => {
   `)
 
   const { author } = data.site.siteMetadata
-  const authorName = author.name
-  const socialMedia = author.socialMedia
+  const { author: authorName, socialMedia } = author
 
   return (
     <footer className="flex justify-center">
@@ -32,7 +31,7 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center mt-1">
-          © {new Date().getFullYear()} { authorName }
+        { authorName } © {new Date().getFullYear()}
         </div>
       </div>
     </footer>
