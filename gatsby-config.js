@@ -30,7 +30,6 @@ module.exports = {
           { name: 'Vue',         icon: 'devicon-vuejs-plain',       color: 'text-green-600',  skill: 'Skillful' },
           { name: 'Rails',       icon: 'devicon-rails-plain',       color: 'text-red-800',    skill: 'Experienced' },
           { name: 'Django',      icon: 'devicon-django-plain',      color: 'text-green-800',  skill: 'Beginner' },
-          { name: 'Django',      icon: 'devicon-django-plain',      color: 'text-green-800',  skill: 'Beginner' },
           { name: 'Laravel',     icon: 'devicon-laravel-plain',     color: 'text-red-600',    skill: 'Beginner' },
           { name: 'CodeIgniter', icon: 'devicon-codeigniter-plain', color: 'text-red-600',    skill: 'Skillful' },
         ],
