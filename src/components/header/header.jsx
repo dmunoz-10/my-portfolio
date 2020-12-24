@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import './styles.scss'
@@ -37,13 +37,16 @@ const Header = ({ rootPath, location }) => {
       <div className="container mx-auto pb-12">
         <nav className="flex items-center justify-between">
           <div className="flex justify-start">
-            <Image
-              className="mr-4 mb-0 mt-1 rounded-full border-solid border-2 border-gray-300"
-              fixed={data.avatar.childImageSharp.fixed}
-              alt={author.name}
-              style={{ minWidth: 50 }}
-            />
-            {!(rootPath === location) && <Link className="text-2xl mt-2 link" to="/">{ author.name }</Link>}
+          {!(rootPath === location) &&
+            <Fragment>
+              <Image
+                className="mr-4 mb-0 mt-1 rounded-full border-solid border-2 border-gray-300"
+                fixed={data.avatar.childImageSharp.fixed}
+                alt={author.name}
+                style={{ minWidth: 50 }}
+              />
+              <Link className="text-2xl mt-2 link" to="/">{ author.name }</Link>
+            </Fragment>}
           </div>
 
           <div className="flex justify-end mt-1">

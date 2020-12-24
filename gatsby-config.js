@@ -9,6 +9,32 @@ module.exports = {
         { name: 'GitHub', url: 'https://github.com/dmunoz-10' },
         { name: 'LinkedIn', url: 'https://www.linkedin.com/in/djmv225/' },
       ],
+      workExperience: [
+        {
+          company: {
+            name: 'Universidad de la costa (CUC)',
+            place: 'Barranquilla - Colombia',
+          },
+          title: 'Full Stack Developer',
+          description: '',
+          from: 'Oct 2019',
+          to: 'Present',
+        },
+      ],
+      education: [
+        {
+          institute: 'Universidad de la costa (CUC)',
+          title: 'System Engineer',
+          from: 'Feb 2016',
+          to: 'Jul 2021',
+        },
+        {
+          institute: 'Centro Cultural Colombo Americano',
+          title: 'English',
+          from: 'Feb 2015',
+          to: 'Jul 2020',
+        },
+      ],
       skills: {
         languages: [
           { name: 'Spanish', skill: 'Native' },
@@ -18,7 +44,7 @@ module.exports = {
           { name: 'HTML',        icon: 'devicon-html5-plain',      color: 'text-yellow-700', skill: 'Experienced' },
           { name: 'CSS',         icon: 'devicon-css3-plain',       color: 'text-blue-600',   skill: 'Experienced' },
           { name: 'Sass',        icon: 'devicon-sass-original',    color: 'text-pink-500',   skill: 'Experienced' },
-          { name: 'JavaScript',  icon: 'devicon-javascript-plain', color: 'text-yellow-400', skill: 'Experienced' },
+          { name: 'JavaScript',  icon: 'devicon-javascript-plain', color: 'text-yellow-500', skill: 'Experienced' },
           { name: 'Python',      icon: 'devicon-python-plain',     color: 'text-indigo-700', skill: 'Experienced' },
           { name: 'Ruby',        icon: 'devicon-ruby-plain',       color: 'text-red-600',    skill: 'Experienced' },
           { name: 'PHP',         icon: 'devicon-php-plain',        color: 'text-purple-400', skill: 'Skillful' },
@@ -39,7 +65,7 @@ module.exports = {
           { name: 'MongoDB',    icon: 'devicon-mongodb-plain',     color: 'text-green-600',  skill: 'Beginner' },
         ],
         devops: [
-          { name: 'Docker', icon: 'devicon-docker-plain', color: 'text-green-600', skill: 'Skillful' },
+          { name: 'Docker', icon: 'devicon-docker-plain', color: 'text-blue-600', skill: 'Skillful' },
         ],
       },
     },

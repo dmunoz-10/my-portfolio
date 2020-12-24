@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Image from "gatsby-image"
 
 import Layout from "../components/layout"
@@ -22,7 +22,7 @@ class BlogIndex extends React.Component {
             fixed={data.avatar.childImageSharp.fixed}
             alt={author.name}
             style={{
-              minWidth: 200,
+              minWidth: 300,
             }}
           />
 
@@ -32,6 +32,13 @@ class BlogIndex extends React.Component {
               I'm a web developer focus mostly on <strong>back-end</strong>
             </p>
           </div>
+        </div>
+
+        <div>
+          <h2 className="text-3xl">About me</h2>
+
+          <p>
+          </p>
         </div>
       </Layout>
     )
@@ -44,7 +51,7 @@ export const pageQuery = graphql`
   query {
     avatar: file(absolutePath: { regex: "/panda-profile.jpg/" }) {
       childImageSharp {
-        fixed(width: 200, height: 200, cropFocus: CENTER) {
+        fixed(width: 300, height: 300, cropFocus: CENTER) {
           ...GatsbyImageSharpFixed
         }
       }
