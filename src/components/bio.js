@@ -8,7 +8,7 @@ const Bio = () => {
     query BioQuery {
       avatar: file(absolutePath: { regex: "/panda-profile.jpg/" }) {
         childImageSharp {
-          fixed(width: 150, height: 150, cropFocus: CENTER) {
+          fixed(width: 200, height: 200, cropFocus: CENTER) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -16,15 +16,13 @@ const Bio = () => {
       site {
         siteMetadata {
           author
-          social {
-            linkedin
-          }
         }
       }
     }
   `)
 
-  const { author, social } = data.site.siteMetadata
+  const { author } = data.site.siteMetadata
+
   return (
     <div className="flex mb-20">
       <Image
@@ -32,19 +30,15 @@ const Bio = () => {
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
         style={{
-          minWidth: 150,
+          minWidth: 200,
         }}
       />
-      <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
-        {` `}
-        <a
-          href={`https://twitter.com/${social.twitter}`}
-        >
-          You should follow him on Twitter
-        </a>
-      </p>
+      <div className="my-auto">
+        <h2 className="text-5xl">Hey! I'm <strong>Daniel</strong></h2>
+        <p className="text-3xl">
+          I'm a web developer focus mostly on <strong>back-end</strong>
+        </p>
+      </div>
     </div>
   )
 }

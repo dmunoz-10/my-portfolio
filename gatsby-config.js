@@ -4,10 +4,10 @@ module.exports = {
     author: `Daniel Muñoz`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-tailwindcss-demo.netlify.com/`,
-    social: {
-      github: `https://github.com/dmunoz-10`,
-      linkedin: `https://www.linkedin.com/in/djmv225/`,
-    },
+    socialMedia: [
+      { name: 'GitHub', url: 'https://github.com/dmunoz-10' },
+      { name: 'LinkedIn', url: 'https://www.linkedin.com/in/djmv225/' },
+    ],
     skills: [
       { name: 'HTML',        icon: 'devicon-html5-plain',       color: 'text-yellow-700', skill: 'Experienced' },
       { name: 'CSS',         icon: 'devicon-css3-plain',        color: 'text-blue-600',   skill: 'Experienced' },

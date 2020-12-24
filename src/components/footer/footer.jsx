@@ -1,22 +1,32 @@
 import React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
 const Footer = () => {
-  const links = [
-    { name: 'Github', url: '' },
-    { name: 'Github', url: '' },
-    { name: 'Github', url: '' },
-  ]
+  const data = useStaticQuery(graphql`
+    query FooterQuery {
+      site {
+        siteMetadata {
+          socialMedia {
+            name
+            url
+          }
+        }
+      }
+    }
+  `)
+
+  const { socialMedia } = data.site.siteMetadata
+
   return (
     <footer className="flex justify-center">
       <div className="flex flex-col">
-        <div>
-          {links.map(({ name, url }) => (
+        <div className="flex justify-around">
+          {socialMedia.map(({ name, url }) => (
             <a key={name} rel="noopener noreferrer nofollow" href={url}>{name}</a>
           )).reduce((prev, curr) => [prev, ' · ', curr])}
         </div>
 
-        <div>
+        <div className="flex justify-center mt-1">
           © {new Date().getFullYear()} Daniel Muñoz
         </div>
       </div>
