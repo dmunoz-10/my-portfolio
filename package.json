@@ -1,11 +1,15 @@
 {
-  "name": "gatsby-starter-blog-tailwindcss",
+  "name": "portfolio",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby, Markdown and TailwindCSS",
+  "description": "A portfolio created with Gatsby",
   "version": "0.1.0",
-  "author": "André Jonas <andre.jonas@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/andrezzoid/gatsby-starter-blog-tailwindcss/issues"
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
     "gatsby": "^2.17.11",
@@ -44,23 +48,5 @@
   },
   "devDependencies": {
     "prettier": "^1.19.1"
-  },
-  "homepage": "https://github.com/andrezzoid/gatsby-starter-blog-tailwindcss#readme",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andrezzoid/gatsby-starter-blog-tailwindcss.git"
-  },
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
 }
