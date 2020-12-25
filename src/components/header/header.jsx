@@ -53,7 +53,12 @@ const Header = ({ rootPath, location }) => {
             }
           </div>
 
-          <div className="md:flex md:items-stretch md:flex-no-shrink md:flex-grow mt-10 md:mt-1">
+          <div
+            className={
+              `md:flex md:items-stretch md:flex-no-shrink md:flex-grow
+              ${rootPath === location ? 'mt-0' : 'mt-10'} md:mt-1`
+            }
+          >
             <div className="flex md:items-stretch md:justify-end justify-center ml-auto">
               {links.map(({ name, path }) => (
                 <Link

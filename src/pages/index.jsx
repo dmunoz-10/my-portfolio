@@ -15,19 +15,19 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={siteTitle} />
 
-        <div className="flex mb-20">
+        <div className="flex mb-20 flex-col md:flex-row">
           <Image
-            className="mr-4 mb-0 rounded-full"
+            className="mx-auto md:mr-4 mb-0 rounded-full"
             fixed={data.avatar.childImageSharp.fixed}
             alt={author.name}
             style={{
-              minWidth: 300,
+              minWidth: 250,
             }}
           />
 
           <div className="my-auto">
-            <h2 className="text-5xl">Hey! I'm <strong>Daniel</strong></h2>
-            <p className="text-3xl">
+            <h2 className="text-4xl md:text-5xl text-center md:text-left mt-5 md:mt-0">Hey! I'm <strong>Daniel</strong></h2>
+            <p className="text-2xl md:text-3xl mt-2 md:mt-0">
               I'm a web developer focus mostly on <strong>back-end</strong>
             </p>
           </div>
@@ -67,7 +67,7 @@ export const pageQuery = graphql`
   query {
     avatar: file(absolutePath: { regex: "/panda-profile.jpg/" }) {
       childImageSharp {
-        fixed(width: 300, height: 300, cropFocus: CENTER) {
+        fixed(width: 250, height: 250, cropFocus: CENTER) {
           ...GatsbyImageSharpFixed
         }
       }

@@ -40,7 +40,7 @@ class Resume extends React.Component {
                     date={`${from} - ${to}`}
                     dateClassName="text-left"
                     iconStyle={{ background: 'rgb(33, 150, 243)', color: 'white' }}
-                    icon={<i className="fas fa-briefcase fa-2x mt-3"></i>}
+                    icon={<i className="fas fa-briefcase md:text-3xl mt-3 md:mt-4"></i>}
                     visible={true}
                   >
                     <h3 className="text-lg font-semibold mb-2">{ `${title} at ${company.name}` }</h3>
@@ -73,7 +73,7 @@ class Resume extends React.Component {
                     date={`${from} - ${to}`}
                     dateClassName="text-left"
                     iconStyle={{ background: 'rgb(245, 0, 87)', color: 'white' }}
-                    icon={<i className="fas fa-graduation-cap fa-2x mt-3"></i>}
+                    icon={<i className="fas fa-graduation-cap md:text-3xl mt-3 md:mt-4"></i>}
                     visible={true}
                   >
                     <h3 className="text-lg font-semibold mb-2">{ title }</h3>
