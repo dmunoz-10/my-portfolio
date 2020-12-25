@@ -11,7 +11,7 @@ class Resume extends React.Component {
   render () {
     const { data } = this.props
     const { title, author } = data.site.siteMetadata
-    const { name: authorName, workExperience, education, skills } = author
+    const { workExperience, education, skills } = author
     const { languages, programmingLanguages, frameworks, databases, devops } = skills
 
     return (
@@ -107,7 +107,6 @@ export const pageQuery = graphql`
      siteMetadata {
        title
        author {
-         name
          workExperience {
            company {
              name

@@ -44,8 +44,8 @@ class BlogIndex extends React.Component {
             I usually code on Linux, actually I like Kubuntu distribution, I think is easier and
             less painful to code on Linux than on Windows. Ruby is actually my favorite programming
             language and Rails my favorite framework, I think both are great technologies for web
-            development, and NOT, Ruby is NOT dead, if you don't believe me,
-            just check <a href="https://isrubydead.com/" target="_blank">this</a> out 😉.<br/><br/>
+            development, and NOT, Ruby is NOT dead, if you don't believe me, just
+            check <a href="https://isrubydead.com/" target="_blank" rel="noopener noreferrer">this</a> out 😉.<br/><br/>
 
             I'm a cinephile, my favorite movie is <strong>Donnie Darko</strong>, is an amazing movie,
             the first time I saw it, it hit right in my feels when I was younger.

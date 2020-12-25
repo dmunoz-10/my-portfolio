@@ -1,10 +1,9 @@
 import React, { Fragment } from 'react'
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql, Link } from 'gatsby'
 
 const Skills = ({ title, data, gridCol }) => {
   return (
-    <div>
+    <Fragment>
       <h2 className="text-3xl mb-6">{ title }</h2>
 
       <div className={`grid grid-cols-${gridCol}`}>
@@ -19,7 +18,7 @@ const Skills = ({ title, data, gridCol }) => {
           </div>
         ))}
       </div>
-    </div>
+    </Fragment>
   )
 }
 
