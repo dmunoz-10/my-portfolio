@@ -24,16 +24,16 @@ module.exports = {
       ],
       education: [
         {
-          institute: 'Universidad de la costa (CUC)',
-          title: 'System Engineer',
-          from: 'Feb 2016',
-          to: 'Jul 2021',
-        },
-        {
           institute: 'Centro Cultural Colombo Americano',
           title: 'English',
           from: 'Feb 2015',
           to: 'Jul 2020',
+        },
+        {
+          institute: 'Universidad de la costa (CUC)',
+          title: 'System Engineer',
+          from: 'Feb 2016',
+          to: 'Present',
         },
       ],
       skills: {

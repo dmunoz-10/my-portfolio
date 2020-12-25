@@ -4,7 +4,6 @@ import Image from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import { rhythm } from "../utils/typography"
 
 class BlogIndex extends React.Component {
   render() {
@@ -35,9 +34,26 @@ class BlogIndex extends React.Component {
         </div>
 
         <div>
-          <h2 className="text-3xl">About me</h2>
+          <h2 className="text-3xl mb-4">About me</h2>
 
-          <p>
+          <p className="text-xl">
+            I'm currently working as a back-end developer with Ruby on Rails, although sometimes
+            I work on some personal frontend projects in ReactJs and VueJs. I'm so passionate at
+            coding and learn new stuff every day by myself.<br/><br/>
+
+            I usually code on Linux, actually I like Kubuntu distribution, I think is easier and
+            less painful to code on Linux than on Windows. Ruby is actually my favorite programming
+            language and Rails my favorite framework, I think both are great technologies for web
+            development, and NOT, Ruby is NOT dead, if you don't believe me,
+            just check <a href="https://isrubydead.com/" target="_blank">this</a> out 😉.<br/><br/>
+
+            I'm a cinephile, my favorite movie is <strong>Donnie Darko</strong>, is an amazing movie,
+            the first time I saw it, it hit right in my feels when I was younger.
+            I'm also a <strong>Naruto</strong> fan, a great and mature anime that has gained a lot of
+            fans around the world, and lately <strong>Berserk</strong> has become one of my favorite
+            mangas. Sometimes I like to read, I've read some of Stephen King's books: Carrie, Misery
+            and Mr. Mercedes, I'll probably read more books of this amazing author. And I think there's
+            no more things to say, just one last thing, I like pizza with pineapple 🙂🍕.
           </p>
         </div>
       </Layout>

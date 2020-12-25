@@ -26,7 +26,12 @@ const Footer = () => {
       <div className="flex flex-col">
         <div className="flex justify-around text-xl">
           {socialMedia.map(({ name, url }) => (
-            <a key={name} rel="noopener noreferrer nofollow" href={url}>{name}</a>
+            <a
+              key={name}
+              rel="noopener noreferrer"
+              href={url}
+              target="_blank"
+            >{name}</a>
           )).reduce((prev, curr) => [prev, <Fragment key={1}>&nbsp;&nbsp; · &nbsp;&nbsp;</Fragment>, curr])}
         </div>
 
