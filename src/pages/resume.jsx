@@ -28,6 +28,7 @@ class Resume extends React.Component {
               <VerticalTimeline>
                 {workExperience.map(({ company, title, description, from, to }) => (
                   <VerticalTimelineElement
+                    key={from}
                     className="vertical-timeline-element--work"
                     contentStyle={{
                       padding: '1rem',
@@ -60,6 +61,7 @@ class Resume extends React.Component {
               <VerticalTimeline>
                 {education.map(({ institute, title, from, to }) => (
                   <VerticalTimelineElement
+                    key={from}
                     className="vertical-timeline-element--work"
                     contentStyle={{
                       padding: '1rem',
