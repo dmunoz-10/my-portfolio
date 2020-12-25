@@ -1,17 +1,17 @@
 import React, { Fragment } from 'react'
 import PropTypes from "prop-types"
 
-const Skills = ({ title, data, gridCol }) => {
+const Skills = ({ title, data }) => {
   return (
     <Fragment>
       <h2 className="text-3xl mb-6">{ title }</h2>
 
-      <div className={`grid grid-cols-${gridCol}`}>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {data.map(({ name, icon, color, skill }) => (
           <div className="flex flex-col justify-center my-4">
             {
             icon ?
-              <i className={`${icon} text-6xl hover:${color}`} title={name}></i> :
+              <i className={`${icon} text-6xl ${color}`} title={name}></i> :
               <h2 className="text-2xl">{ name }</h2>
             }
             <h4 className="mt-3">{ skill }</h4>
@@ -32,7 +32,6 @@ Skills.propTypes = {
       skill: PropTypes.string.isRequired,
     }),
   ),
-  gridCol: PropTypes.number.isRequired,
 }
 
 export default Skills

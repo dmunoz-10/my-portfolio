@@ -22,7 +22,7 @@ class Resume extends React.Component {
 
         <div className="grid grid-cols-1 divide-y-2 divide-blue-500">
           <section className="py-20 text-center" id="work-experience">
-            <h4 className="text-base mb-1">Work Experience</h4>
+            <h4 className="text-base mb-1 text-blue-600">Work Experience</h4>
 
             <div className="mt-4">
               <VerticalTimeline>
@@ -54,7 +54,7 @@ class Resume extends React.Component {
           </section>
 
           <section className="py-20 text-center" id="work-experience">
-            <h4 className="text-base mb-1">Education</h4>
+            <h4 className="text-base mb-1 text-pink-600">Education</h4>
 
             <div className="mt-4">
               <VerticalTimeline>
@@ -83,14 +83,14 @@ class Resume extends React.Component {
           </section>
 
           <section className="py-20 text-center" id="skills">
-            <h4 className="text-base mb-4">Skills</h4>
+            <h4 className="text-base mb-4 text-purple-600">Skills</h4>
 
             <div className="space-y-8">
-              <Skills title="Programming Languages" data={programmingLanguages} gridCol={4} />
-              <Skills title="Frameworks" data={frameworks} gridCol={4} />
-              <Skills title="Databases" data={databases} gridCol={3} />
-              <Skills title="Devops" data={devops} gridCol={1} />
-              <Skills title="Languages" data={languages} gridCol={2}/>
+              <Skills title="Programming Languages" data={programmingLanguages} />
+              <Skills title="Frameworks" data={frameworks} />
+              <Skills title="Databases" data={databases} />
+              <Skills title="Devops" data={devops} />
+              <Skills title="Languages" data={languages} />
             </div>
           </section>
         </div>
