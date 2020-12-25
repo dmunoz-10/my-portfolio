@@ -5,6 +5,7 @@ module.exports = {
     author: {
       name: 'Daniel Muñoz',
       description: 'Web developer with a real passion for technologies, coding lover and focus on back-end with Ruby on Rails.',
+      email: 'djmv225@gmail.com',
       socialMedia: [
         { name: 'GitHub', url: 'https://github.com/dmunoz-10' },
         { name: 'LinkedIn', url: 'https://www.linkedin.com/in/djmv225/' },
