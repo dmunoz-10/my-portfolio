@@ -8,18 +8,17 @@ import SEO from "../components/seo"
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const author = data.site.siteMetadata.author
+    const { title, author: { name } } = data.site.siteMetadata
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title={siteTitle} />
+      <Layout location={this.props.location} title={title}>
+        <SEO title="About me" />
 
         <div className="flex mb-20 flex-col md:flex-row">
           <Image
             className="mx-auto md:mr-4 mb-0 rounded-full"
             fixed={data.avatar.childImageSharp.fixed}
-            alt={author.name}
+            alt={name}
             style={{
               minWidth: 250,
             }}

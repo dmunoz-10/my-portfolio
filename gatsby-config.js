@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Portfolio`,
+    title: `Daniel Muñoz Portfolio`,
     description: `The Daniel Muñoz's portfolio where you can see some of his activities`,
     author: {
       name: 'Daniel Muñoz',
@@ -126,7 +126,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/favicon.png`,
       },
     },
     `gatsby-plugin-offline`,
