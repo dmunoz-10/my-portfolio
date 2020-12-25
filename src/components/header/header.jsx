@@ -25,7 +25,7 @@ const Header = ({ rootPath, location }) => {
   `)
 
   const { author } = data.site.siteMetadata
-
+  const isInRootPath = rootPath === location
   const links = [
     { name: 'Posts', path: '/posts' },
     { name: 'Resume', path: '/resume' },
@@ -38,7 +38,7 @@ const Header = ({ rootPath, location }) => {
         <nav className="w-full px-4 rounded relative md:flex items-stretch justify-between">
           <div className="flex flex-no-shrink items-stretch justify-start">
             {
-              !(rootPath === location) &&
+              !(isInRootPath) &&
                 <Link className="text-2xl link flex-no-grow flex-no-shrink relative flex" to="/">
                   <div className="flex justify-center">
                     <Image
@@ -56,13 +56,13 @@ const Header = ({ rootPath, location }) => {
           <div
             className={
               `md:flex md:items-stretch md:flex-no-shrink md:flex-grow
-              ${rootPath === location ? 'mt-0' : 'mt-10'} md:mt-1`
+              ${isInRootPath ? 'mt-0' : 'mt-10'} md:mt-1`
             }
           >
             <div className="flex md:items-stretch md:justify-end justify-center ml-auto">
               {links.map(({ name, path }) => (
                 <Link
-                  className={`inline-block ml-4 pt-3 text-xl link link__nav${location === path ? '--active' : ''}`}
+                  className={`inline-block ml-4 pt-3 text-xl link link__nav${isInRootPath ? '--active' : ''}`}
                   to={path}
                   key={path}
                 >
