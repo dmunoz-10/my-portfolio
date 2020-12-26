@@ -62,7 +62,7 @@ const Header = ({ rootPath, location }) => {
             <div className="flex md:items-stretch md:justify-end justify-center ml-auto">
               {links.map(({ name, path }) => (
                 <Link
-                  className={`inline-block ml-4 pt-3 text-xl link link__nav${isInRootPath ? '--active' : ''}`}
+                  className={`inline-block ml-4 pt-3 text-xl link link__nav${location === path ? '--active' : ''}`}
                   to={path}
                   key={path}
                 >
