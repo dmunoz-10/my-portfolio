@@ -26,7 +26,7 @@ class BlogIndex extends React.Component {
 
           <div className="my-auto">
             <h2 className="text-4xl md:text-5xl text-center md:text-left mt-5 md:mt-0">Hey! I'm <strong>Daniel</strong></h2>
-            <p className="text-2xl md:text-3xl mt-2 md:mt-0 md:w-3/4">
+            <p className="text-2xl md:text-3xl mt-2 md:mt-0 md:w-3/4 text-center md:text-left">
               I'm a web developer focus mostly on <strong>back-end</strong>
             </p>
           </div>
