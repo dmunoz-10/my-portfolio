@@ -46,7 +46,7 @@ class Posts extends React.Component {
       <Layout location={this.props.location} title={title}>
         <SEO title="Posts" />
 
-        <h2 className="text-5xl">Posts</h2>
+        <h2 className="text-5xl text-center">Posts</h2>
 
         {
           filterPosts.length > 0 &&
@@ -80,7 +80,7 @@ class Posts extends React.Component {
 
         {posts.length === 0 ?
           <div className="mt-10 block w-full text-center">
-            <h4 className="text-xl text-gray-500">There isn't posts yet :(</h4>
+            <h4 className="text-xs md:text-base text-gray-500">There isn't posts yet :(</h4>
           </div>:
           <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-6">
             {postsFiltered.map(({ node: { id, excerpt, fields: { slug }, frontmatter } }) => {
