@@ -10,6 +10,7 @@ import Skills from '../components/skills'
 class Resume extends React.Component {
   render () {
     const { data } = this.props
+    const cvURL = data.cv.publicURL
     const { title, author } = data.site.siteMetadata
     const { workExperience, education, skills } = author
     const { languages, programmingLanguages, frameworks, databases, devops } = skills
@@ -19,6 +20,17 @@ class Resume extends React.Component {
         <SEO title="Resume" />
 
         <h2 className="text-5xl mb-3 text-center">Resume</h2>
+
+        <div className="my-10 w-full flex justify-end">
+          <a
+            href={cvURL}
+            class="text-gray-900 font-bold py-2 px-4 rounded inline-flex items-center"
+            target="_blank"
+          >
+            <i class="fas fa-download mr-2"></i>
+            <span>See & Download CV</span>
+          </a>
+        </div>
 
         <div className="grid grid-cols-1 divide-y-2 divide-blue-500">
           <section className="py-20 text-center" id="work-experience">
@@ -105,6 +117,9 @@ export default Resume
 
 export const pageQuery = graphql`
  query {
+   cv: file(absolutePath: { regex:  "/cv.pdf/" }) {
+     publicURL
+   }
    site {
      siteMetadata {
        title
