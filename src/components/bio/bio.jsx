@@ -36,7 +36,7 @@ const Bio = () => {
         }}
       />
       <div className="my-auto">
-        <h2 className="text-xl">{ name }</h2>
+        <h2 className="text-xl font-bold">{ name }</h2>
         <p className="text-base">{ description }</p>
       </div>
     </div>
