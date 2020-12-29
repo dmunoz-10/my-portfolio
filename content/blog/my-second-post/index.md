@@ -1,6 +1,9 @@
 ---
-title: My Second Post!
-date: "2015-05-06T23:46:37.121Z"
+cover: './../hello-world/salty_egg.jpg'
+title: 'Hello World'
+description: 'Hello World'
+tags: ['some', 'hello', 'world']
+date: '2015-05-06T23:46:37.121Z'
 ---
 
 Wow! I love blogging so much already.

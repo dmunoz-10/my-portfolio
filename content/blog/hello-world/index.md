@@ -1,7 +1,9 @@
 ---
-title: Hello World
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+cover: './salty_egg.jpg'
+title: 'Hello World'
+description: 'Hello World'
+tags: ['some', 'thing']
+date: '2015-05-01T22:12:03.284Z'
 ---
 
 This is my first post on my new fake blog! How exciting!
