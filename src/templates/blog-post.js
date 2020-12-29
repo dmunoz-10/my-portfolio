@@ -40,13 +40,6 @@ class BlogPostTemplate extends React.Component {
         <nav>
           <ul
             className="flex flex-wrap justify-between mb-8"
-            // style={{
-            //   display: `flex`,
-            //   flexWrap: `wrap`,
-            //   justifyContent: `space-between`,
-            //   listStyle: `none`,
-            //   padding: 0,
-            // }}
           >
             <li>
               {previous && (
