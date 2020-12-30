@@ -18,9 +18,11 @@ module.exports = {
             place: 'Barranquilla - Colombia',
           },
           title: 'Full Stack Developer',
-          description: '',
+          description:
+            'I analyzed requirements, designed, developed and implemented software applications. Besides I tested \
+             websites and performed troubleshooting prior to deployment',
           from: 'Oct 2019',
-          to: 'Present',
+          to: 'Jan 2021',
         },
       ],
       education: [
@@ -223,8 +225,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Daniel Muñoz Portfolio`,
+        short_name: `Portfolio`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
