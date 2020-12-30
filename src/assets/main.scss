@@ -16,6 +16,19 @@
   background: $primary-color;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(134, 131, 131);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: $secondary-color;
+}
+
 body {
   width: 100%;
   background-color: $secondary-color;
