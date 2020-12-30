@@ -1,8 +1,8 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react'
+import { graphql } from 'gatsby'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 class Contact extends React.Component {
   constructor(props) {
@@ -21,20 +21,24 @@ class Contact extends React.Component {
     })
   }
 
-  handleSubmit = (e) => {
+  handleSubmit = e => {
     e.preventDefault()
     const { subject, email, message } = this.state
-    const { author: { email: authorEmail } } = this.props.data.site.siteMetadata
+    const {
+      author: { email: authorEmail },
+    } = this.props.data.site.siteMetadata
 
     if (subject && email && message) {
-      window.open(`mailto:${authorEmail}?cc=${email}&subject=${subject}&body=${message}`)
+      window.open(
+        `mailto:${authorEmail}?cc=${email}&subject=${subject}&body=${message}`
+      )
       this.setState({ subject: '', email: '', message: '' })
     } else {
       alert('Please fill out all fields')
     }
   }
 
-  render () {
+  render() {
     const { data } = this.props
     const { subject, email, message } = this.state
     const { title } = data.site.siteMetadata
@@ -48,7 +52,9 @@ class Contact extends React.Component {
         <div className="mt-10">
           <form onSubmit={this.handleSubmit}>
             <div className="my-4 block">
-              <label htmlFor="subject" className="block text-3xl">Subject</label>
+              <label htmlFor="subject" className="block text-3xl">
+                Subject
+              </label>
               <input
                 type="text"
                 name="subject"
@@ -64,7 +70,9 @@ class Contact extends React.Component {
             </div>
 
             <div className="my-4 block">
-              <label htmlFor="email" className="block text-3xl">Email</label>
+              <label htmlFor="email" className="block text-3xl">
+                Email
+              </label>
               <input
                 type="email"
                 name="email"
@@ -80,7 +88,9 @@ class Contact extends React.Component {
             </div>
 
             <div className="my-4 block">
-              <label htmlFor="message" className="block text-3xl">Message</label>
+              <label htmlFor="message" className="block text-3xl">
+                Message
+              </label>
               <textarea
                 name="message"
                 id="message"
@@ -95,7 +105,7 @@ class Contact extends React.Component {
                 "
               ></textarea>
             </div>
-            
+
             <button
               type="submit"
               className="

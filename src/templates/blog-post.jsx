@@ -1,9 +1,9 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react'
+import { Link, graphql } from 'gatsby'
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Bio from '../components/bio'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -37,9 +37,7 @@ class BlogPostTemplate extends React.Component {
         </article>
 
         <nav>
-          <ul
-            className="flex flex-wrap justify-between mb-8"
-          >
+          <ul className="flex flex-wrap justify-between mb-8">
             <li>
               {previous && (
                 <Link

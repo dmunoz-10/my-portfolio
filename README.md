@@ -78,7 +78,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 13. **`README.md`**: A text file containing useful reference information about your project.
 
-11. **`tailwind.config.js`**: The [TailwindCSS](https://tailwindcss.com/) configuration file, see their documentation for more information on how to customize Tailwind.
+14. **`tailwind.config.js`**: The [TailwindCSS](https://tailwindcss.com/) configuration file, see their documentation for more information on how to customize Tailwind.
 
 ## 🎓 Learning Gatsby
 

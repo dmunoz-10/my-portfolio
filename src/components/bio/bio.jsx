@@ -1,6 +1,6 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Image from 'gatsby-image'
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -23,7 +23,9 @@ const Bio = () => {
     }
   `)
 
-  const { author: { name, description } } = data.site.siteMetadata
+  const {
+    author: { name, description },
+  } = data.site.siteMetadata
 
   return (
     <div className="flex mb-20">
@@ -36,8 +38,8 @@ const Bio = () => {
         }}
       />
       <div className="my-auto">
-        <h2 className="text-xl font-bold">{ name }</h2>
-        <p className="text-base">{ description }</p>
+        <h2 className="text-xl font-bold">{name}</h2>
+        <p className="text-base">{description}</p>
       </div>
     </div>
   )

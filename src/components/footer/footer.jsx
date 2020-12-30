@@ -25,18 +25,26 @@ const Footer = () => {
     <footer className="flex justify-center mt-20">
       <div className="flex flex-col">
         <div className="flex justify-around text-xl">
-          {socialMedia.map(({ name, url }) => (
-            <a
-              key={name}
-              rel="noopener noreferrer"
-              href={url}
-              target="_blank"
-            >{name}</a>
-          )).reduce((prev, curr) => [prev, <Fragment key={1}>&nbsp;&nbsp; · &nbsp;&nbsp;</Fragment>, curr])}
+          {socialMedia
+            .map(({ name, url }) => (
+              <a
+                key={name}
+                rel="noopener noreferrer"
+                href={url}
+                target="_blank"
+              >
+                {name}
+              </a>
+            ))
+            .reduce((prev, curr) => [
+              prev,
+              <Fragment key={1}>&nbsp;&nbsp; · &nbsp;&nbsp;</Fragment>,
+              curr,
+            ])}
         </div>
 
         <div className="flex justify-center mt-1 text-lg">
-          { authorName } © {new Date().getFullYear()}
+          {authorName} © {new Date().getFullYear()}
         </div>
       </div>
     </footer>

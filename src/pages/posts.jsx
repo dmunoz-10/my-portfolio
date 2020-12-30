@@ -1,8 +1,8 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react'
+import { Link, graphql } from 'gatsby'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 class Posts extends React.Component {
   constructor(props) {
@@ -27,7 +27,7 @@ class Posts extends React.Component {
     })
   }
 
-  render () {
+  render() {
     const { data } = this.props
     const { filterPosts } = this.state
     const { title } = data.site.siteMetadata
@@ -37,9 +37,15 @@ class Posts extends React.Component {
     if (filterPosts.length === 0) {
       postsFiltered = posts
     } else {
-      postsFiltered = posts.filter(({ node: { frontmatter: { tags }}}) => {
-        return filterPosts.every(tag => tags.includes(tag))
-      })
+      postsFiltered = posts.filter(
+        ({
+          node: {
+            frontmatter: { tags },
+          },
+        }) => {
+          return filterPosts.every(tag => tags.includes(tag))
+        }
+      )
     }
 
     return (
@@ -48,11 +54,10 @@ class Posts extends React.Component {
 
         <h2 className="text-5xl text-center">Posts</h2>
 
-        {
-          filterPosts.length > 0 &&
+        {filterPosts.length > 0 && (
           <div className="w-full flex justify-between mb-5 mt-10">
             <div className="py-auto">
-              {filterPosts.map((tag) => (
+              {filterPosts.map(tag => (
                 <span
                   key={tag}
                   onClick={() => this.editFilter(tag)}
@@ -76,31 +81,55 @@ class Posts extends React.Component {
               Clear
             </button>
           </div>
-        }
+        )}
 
-        {posts.length === 0 ?
+        {posts.length === 0 ? (
           <div className="mt-10 block w-full text-center">
-            <h4 className="text-xs md:text-base text-gray-500">There isn't posts yet :(</h4>
-          </div>:
+            <h4 className="text-xs md:text-base text-gray-500">
+              There isn't posts yet :(
+            </h4>
+          </div>
+        ) : (
           <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-6">
-            {postsFiltered.map(({ node: { id, excerpt, fields: { slug }, frontmatter } }) => {
-              const { cover, title: postTitle, description, tags, date } = frontmatter
-              return (
-                <div className="relative pb-16 rounded-md overflow-hidden shadow-md hover:shadow-2xl bg-white" key={id}>
-                  <Link to={slug}>
-                    <img className="w-full mb-2" src={cover.childImageSharp.fluid.src} alt={postTitle} />
-                  </Link>
+            {postsFiltered.map(
+              ({
+                node: {
+                  id,
+                  excerpt,
+                  fields: { slug },
+                  frontmatter,
+                },
+              }) => {
+                const {
+                  cover,
+                  title: postTitle,
+                  description,
+                  tags,
+                  date,
+                } = frontmatter
+                return (
+                  <div
+                    className="relative pb-16 rounded-md overflow-hidden shadow-md hover:shadow-2xl bg-white"
+                    key={id}
+                  >
+                    <Link to={slug}>
+                      <img
+                        className="w-full mb-2"
+                        src={cover.childImageSharp.fluid.src}
+                        alt={postTitle}
+                      />
+                    </Link>
                     <div className="px-6 py-4">
-                      <h5 className="text-sm text-gray-600 mb-4" >{ date }</h5>
+                      <h5 className="text-sm text-gray-600 mb-4">{date}</h5>
                       <Link to={slug}>
-                        <h3 className="font-bold text-xl mb-2">{ postTitle }</h3>
+                        <h3 className="font-bold text-xl mb-2">{postTitle}</h3>
                       </Link>
                       <p className="text-gray-700 text-base">
-                        { description || excerpt }
+                        {description || excerpt}
                       </p>
                     </div>
                     <div className="absolute px-6 pt-4 pb-2 bottom-0">
-                      {tags.map((tag) => (
+                      {tags.map(tag => (
                         <span
                           key={tag}
                           onClick={() => this.editFilter(tag)}
@@ -113,11 +142,12 @@ class Posts extends React.Component {
                         </span>
                       ))}
                     </div>
-                </div>
-              )
-            })}
+                  </div>
+                )
+              }
+            )}
           </div>
-        }
+        )}
       </Layout>
     )
   }
