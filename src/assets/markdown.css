@@ -1,5 +1,9 @@
-// Markdown formatting, uses Tailwind @apply primitive to apply Tailwind's utility classes to
-// elements created by the Markdown parser
+/* Markdown formatting, uses Tailwind @apply primitive to apply Tailwind's utility classes to
+elements created by the Markdown parser */
+
+.markdown > h1 {
+  @apply text-5xl font-black mt-16 mb-8;
+}
 
 .markdown > h2 {
   @apply text-3xl font-black mt-16 mb-8;

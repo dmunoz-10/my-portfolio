@@ -10,5 +10,8 @@ import 'tailwindcss/base.css'
 import 'tailwindcss/components.css'
 import 'tailwindcss/utilities.css'
 
+// Importing markdown styles
+import './src/assets/markdown.css'
+
 // Importing custom styles
 import './src/assets/main.scss'
