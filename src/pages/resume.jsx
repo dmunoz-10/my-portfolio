@@ -33,10 +33,11 @@ class Resume extends React.Component {
         <div className="my-10 w-full flex justify-end">
           <a
             href={cvURL}
-            class="text-gray-900 font-bold py-2 px-4 rounded inline-flex items-center"
+            className="text-gray-900 font-bold py-2 px-4 rounded inline-flex items-center"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <i class="fas fa-download mr-2"></i>
+            <i className="fas fa-download mr-2"></i>
             <span>See & Download CV</span>
           </a>
         </div>
