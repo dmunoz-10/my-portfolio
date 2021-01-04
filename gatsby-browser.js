@@ -13,5 +13,8 @@ import 'tailwindcss/utilities.css'
 // Importing markdown styles
 import './src/assets/markdown.css'
 
+// Highlighting for code blocks
+import 'prismjs/themes/prism-okaidia.css'
+
 // Importing custom styles
 import './src/assets/main.scss'
