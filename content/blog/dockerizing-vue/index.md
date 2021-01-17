@@ -1,11 +1,11 @@
 ---
 cover: './cover.jpg'
 title: 'Dockerizing a Vuejs app'
-description: 'Here you will know how to dockerize a commom Vuejs app with Docker-Compose'
+description: 'Here you will know how to dockerize a commom Vuejs app with Docker Compose'
 tags:
   - 'Vue'
   - 'Docker'
-  - 'Docker-Compose'
+  - 'Docker Compose'
 date: '2021-01-03T22:12:03.284Z'
 ---
 
