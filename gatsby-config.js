@@ -20,9 +20,9 @@ module.exports = {
           title: 'Full Stack Developer',
           description:
             'I analyzed requirements, designed, developed and implemented software applications. Besides, I tested \
-             websites and performed troubleshooting prior to deployment',
-          from: 'Oct 2019',
-          to: 'Jan 2021',
+             websites and performed troubleshooting prior to deployment.',
+          from: 'Oct, 2019',
+          to: 'Jan, 2021',
         },
         {
           company: {
@@ -31,8 +31,9 @@ module.exports = {
           },
           title: 'Backend Developer',
           description:
-            '',
-          from: 'Jan 2021',
+            "I'm focusing on backend stuff related to Ruby on Rails, putting into practice what I've been learning.\
+             And I'm developing much more my knowledge of this framework and about the backend itself.",
+          from: 'Jan, 2021',
           to: 'Present',
         },
       ],
@@ -40,13 +41,13 @@ module.exports = {
         {
           institute: 'Centro Cultural Colombo Americano',
           title: 'English',
-          from: 'Feb 2015',
-          to: 'Jul 2020',
+          from: 'Feb, 2015',
+          to: 'Jul, 2020',
         },
         {
           institute: 'Universidad de la costa (CUC)',
           title: 'System Engineer',
-          from: 'Feb 2016',
+          from: 'Feb, 2016',
           to: 'Present',
         },
       ],
