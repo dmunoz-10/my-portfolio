@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Daniel Muñoz Portfolio`,
     description: `The Daniel Muñoz's portfolio where you can see some of his activities`,
+    siteUrl: 'https://dmunoz.tech',
     author: {
       name: 'Daniel Muñoz',
       description:
