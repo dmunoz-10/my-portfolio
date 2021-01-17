@@ -19,10 +19,21 @@ module.exports = {
           },
           title: 'Full Stack Developer',
           description:
-            'I analyzed requirements, designed, developed and implemented software applications. Besides I tested \
+            'I analyzed requirements, designed, developed and implemented software applications. Besides, I tested \
              websites and performed troubleshooting prior to deployment',
           from: 'Oct 2019',
           to: 'Jan 2021',
+        },
+        {
+          company: {
+            name: 'Socobox',
+            place: 'Barranquilla - Colombia',
+          },
+          title: 'Backend Developer',
+          description:
+            '',
+          from: 'Jan 2021',
+          to: 'Present',
         },
       ],
       education: [

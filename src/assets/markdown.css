@@ -29,9 +29,8 @@ elements created by the Markdown parser */
   @apply text-blue-600;
 }
 
-
 .markdown > p {
-  @apply mb-8;
+  @apply my-8;
 }
 
 .markdown > blockquote {
