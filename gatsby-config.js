@@ -15,18 +15,6 @@ module.exports = {
       workExperience: [
         {
           company: {
-            name: 'Universidad de la costa (CUC)',
-            place: 'Barranquilla - Colombia',
-          },
-          title: 'Full Stack Developer',
-          description:
-            'I analyzed requirements, designed, developed and implemented software applications. Besides, I tested \
-             websites and performed troubleshooting prior to deployment.',
-          from: 'Oct, 2019',
-          to: 'Jan, 2021',
-        },
-        {
-          company: {
             name: 'Socobox',
             place: 'Barranquilla - Colombia',
           },
@@ -37,19 +25,31 @@ module.exports = {
           from: 'Jan, 2021',
           to: 'Present',
         },
+        {
+          company: {
+            name: 'Universidad de la costa (CUC)',
+            place: 'Barranquilla - Colombia',
+          },
+          title: 'Full Stack Developer',
+          description:
+            'I analyzed requirements, designed, developed and implemented software applications. Besides, I tested \
+             websites and performed troubleshooting prior to deployment.',
+          from: 'Oct, 2019',
+          to: 'Jan, 2021',
+        },
       ],
       education: [
-        {
-          institute: 'Centro Cultural Colombo Americano',
-          title: 'English',
-          from: 'Feb, 2015',
-          to: 'Jul, 2020',
-        },
         {
           institute: 'Universidad de la costa (CUC)',
           title: 'System Engineer',
           from: 'Feb, 2016',
           to: 'Present',
+        },
+        {
+          institute: 'Centro Cultural Colombo Americano',
+          title: 'English',
+          from: 'Feb, 2015',
+          to: 'Jul, 2020',
         },
       ],
       skills: {
