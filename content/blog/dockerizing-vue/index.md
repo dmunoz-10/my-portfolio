@@ -166,13 +166,13 @@ So then the command to create the image is:
 docker-compose build
 ```
 
-And the command to create the container is:
+Now, the command to create the container is:
 
 ```bash
 docker-compose up -d
 ```
 
-And the commands to start and stop the container are:
+Finally, the commands to start and stop the container are:
 
 ```bash
 docker-compose start
