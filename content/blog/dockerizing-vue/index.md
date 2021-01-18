@@ -12,7 +12,7 @@ date: '2021-01-03T22:12:03.284Z'
 ![Docker and vue](./cover.jpg)
 
 Docker is a great technology to handle all dependencies quickly
-and make sure that all developers have the same environemnt. That's
+and make sure that all developers have the same environment. That's
 why here we are going to learn how to dockerize an app, what type of
 app, well, a Vuejs app. Vuejs is a technology which is having a huge
 fan base, so for all people who like Vuejs, here you will know how
