@@ -160,10 +160,16 @@ later we build our container, we specify the context and the Dockerfile
 to use. The container is pretty straightforward to analyze and finaly
 we expose the ports.
 
-So then the command to create the container is:
+So then the command to create the image is:
 
 ```bash
 docker-compose build
+```
+
+And the command to create the container is:
+
+```bash
+docker-compose up -d
 ```
 
 And the commands to start and stop the container are:
