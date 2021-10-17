@@ -32,7 +32,7 @@ class BlogIndex extends React.Component {
               Hey! I'm <strong>Daniel</strong>
             </h2>
             <p className="text-2xl md:text-3xl mt-2 md:mt-0 md:w-3/4 text-center md:text-left">
-              I'm a web developer focus mostly on <strong>back-end</strong>
+              I'm a web developer mainly focused on the <strong>backend</strong>
             </p>
           </div>
         </div>
@@ -46,7 +46,8 @@ class BlogIndex extends React.Component {
             ReactJs and VueJs. I'm so passionate at coding and learn new stuff
             every day by myself.
             <br />
-            <br />I usually code on Linux, actually I like Kubuntu distribution,
+            <br />
+            I usually code on Linux, actually I like Kubuntu distribution,
             I think is easier and less painful to code on Linux than on Windows.
             Ruby is actually my favorite programming language and Rails my
             favorite framework, I think both are great technologies for web

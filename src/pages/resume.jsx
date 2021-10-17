@@ -5,6 +5,7 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
+import ReactMarkdownWithHtml from 'react-markdown'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -77,7 +78,7 @@ class Resume extends React.Component {
                       <h4 className="vertical-timeline-element-subtitle text-xs">
                         {company.place}
                       </h4>
-                      <p className="text-base">{description}</p>
+                      <ReactMarkdownWithHtml>{description}</ReactMarkdownWithHtml>
                     </VerticalTimelineElement>
                   )
                 )}

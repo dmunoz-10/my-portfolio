@@ -6,13 +6,23 @@ module.exports = {
     author: {
       name: 'Daniel Muñoz',
       description:
-        'Web developer with a real passion for technologies, coding lover and focus on back-end with Ruby on Rails.',
+        'Web developer with a real passion for technologies, coding lover and focused on the backend with Ruby on Rails.',
       email: 'djmv225@gmail.com',
       socialMedia: [
         { name: 'GitHub', url: 'https://github.com/dmunoz-10' },
         { name: 'LinkedIn', url: 'https://www.linkedin.com/in/djmv225/' },
       ],
       workExperience: [
+        {
+          company: {
+            name: 'Koombea',
+            place: 'Barranquilla - Colombia',
+          },
+          title: 'Backend Developer',
+          description: '',
+          from: 'Sep, 2021',
+          to: 'Present',
+        },
         {
           company: {
             name: 'Socobox',
@@ -23,7 +33,7 @@ module.exports = {
             "I'm focusing on backend stuff related to Ruby on Rails, putting into practice what I've been learning.\
              And I'm developing much more my knowledge of this framework and about the backend itself.",
           from: 'Jan, 2021',
-          to: 'Present',
+          to: 'Aug, 2021',
         },
         {
           company: {
